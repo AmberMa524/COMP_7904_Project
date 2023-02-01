@@ -1,0 +1,12 @@
+Library/
+Logs/
+Temp/
+obj/
+UserSettings/
+.vscode/
+.vs/
+
+.vsconfig
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
+COMP_7904_Project2.sln
