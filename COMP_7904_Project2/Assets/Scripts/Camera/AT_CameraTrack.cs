@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrackObject : MonoBehaviour
+public class AT_CameraTrack : MonoBehaviour
 {
     public GameObject target;
 

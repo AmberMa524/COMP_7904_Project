@@ -10,6 +10,7 @@ public class PlayerMove : MonoBehaviour
     public Rigidbody rb;
     public float speedLimit = 2f;
     public float accelerationSpeed = 0.3f;
+    public float rotationSpeed = 2.5f;
 
     void Awake()
     {
@@ -31,7 +32,7 @@ public class PlayerMove : MonoBehaviour
     {
         Vector2 mov = movement.ReadValue<Vector2>();
 
-        transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y + (mov.x * 2f), transform.localEulerAngles.z);
+        transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y + (mov.x * rotationSpeed), transform.localEulerAngles.z);
         rb.velocity = Vector3.RotateTowards(rb.velocity, transform.forward, 4f, 0);
 
         rb.AddForce(transform.forward * mov.y, ForceMode.VelocityChange);
