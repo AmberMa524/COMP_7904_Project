@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Menu_Screen
+  - Phone_Button
+  - Settings_Screen
+  - Exit_Check
   layers:
   - Default
   - TransparentFX
