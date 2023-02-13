@@ -7,11 +7,6 @@ public class AT_CamRelativeFollow : MonoBehaviour
     public Vector3 followPosition;
     public Transform target;
 
-    void Start()
-    {
-        //transform.LookAt(target);
-    }
-
     private void Update()
     {
         transform.position = target.position + followPosition;
