@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AT_Tests/AT_Scene3Temp.unity
     guid: 9d35153f24c1e4e4b95d74d47f42647c
+  - enabled: 1
+    path: Assets/Scenes/AT_Tests/AT_Scene4Temp.unity
+    guid: a617c057e9207074aaf53182ce505338
   m_configObjects: {}

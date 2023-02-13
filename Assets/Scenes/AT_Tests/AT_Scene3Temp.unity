@@ -2803,6 +2803,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2138050125868664599, guid: 453d542e099c2b3498222bb9b77fdb1e,
+        type: 3}
+      propertyPath: sceneName
+      value: AT_Scene4Temp
+      objectReference: {fileID: 0}
     - target: {fileID: 6408720690569911468, guid: 453d542e099c2b3498222bb9b77fdb1e,
         type: 3}
       propertyPath: m_Name
@@ -5064,7 +5069,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2086695464
 GameObject:
