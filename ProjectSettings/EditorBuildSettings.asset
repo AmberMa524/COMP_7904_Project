@@ -8,4 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/AT_Tests/AT_Scene1Temp.unity
+    guid: 7042497be7a8bd0459738eec39eea417
+  - enabled: 1
+    path: Assets/Scenes/AT_Tests/AT_Scene2Temp.unity
+    guid: 95a98f5396911ed4584a4fc7f4ee47f9
+  - enabled: 1
+    path: Assets/Scenes/AT_Tests/AT_Scene3Temp.unity
+    guid: 9d35153f24c1e4e4b95d74d47f42647c
+  - enabled: 1
+    path: Assets/Scenes/AT_Tests/AT_Scene4Temp.unity
+    guid: a617c057e9207074aaf53182ce505338
+  - enabled: 1
+    path: Assets/Scenes/JS_TestScenes/Apartment.unity
+    guid: 1ec804b7f3af926489eee5e6ed27fb94
+  - enabled: 1
+    path: Assets/Scenes/JS_TestScenes/Apartment_Hallway.unity
+    guid: 9dd64372f0d71b04aab4b2885f76fc37
   m_configObjects: {}
