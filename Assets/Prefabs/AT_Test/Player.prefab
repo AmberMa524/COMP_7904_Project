@@ -704,6 +704,7 @@ MonoBehaviour:
   rb: {fileID: 8378739350487090883}
   speedLimit: 8
   accelerationSpeed: 2
+  rotationSpeed: 2.5
 --- !u!54 &8378739350487090883
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -6,8 +6,9 @@ public class AT_CameraTrack : MonoBehaviour
 {
     public GameObject target;
 
+
     void Update()
     {
-        transform.LookAt(target.transform);
+            transform.LookAt(target.transform);
     }
 }
