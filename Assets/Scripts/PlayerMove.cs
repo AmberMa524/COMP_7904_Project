@@ -12,10 +12,14 @@ public class PlayerMove : MonoBehaviour
     public float speedLimit = 2f;
     public float accelerationSpeed = 0.3f;
     public float rotationSpeed = 2.5f;
+    private AudioManager audioManager;
+
     void Awake()
     {
         ia = new InputActions();
         movement = ia.Player.Movement;
+        audioManager = GetComponent<AudioManager>();
+        audioManager.sounds["Walk"].loop = true;
     }
 
     private void OnEnable()
@@ -38,5 +42,16 @@ public class PlayerMove : MonoBehaviour
         rb.AddForce(transform.forward * mov.y * accelerationSpeed, ForceMode.VelocityChange);
         if (rb.velocity.magnitude > speedLimit)
             rb.velocity = rb.velocity.normalized * speedLimit;
+
+        if (rb.velocity.magnitude < 1.0f)
+        {
+            if (audioManager.sounds["Walk"].isPlaying)
+                audioManager.sounds["Walk"].Pause();
+        }
+        else
+        {
+            if (!audioManager.sounds["Walk"].isPlaying)
+                audioManager.sounds["Walk"].Play();
+        }
     }
 }

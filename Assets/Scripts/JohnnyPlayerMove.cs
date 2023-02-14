@@ -14,10 +14,12 @@ public class JohnnyPlayerMove : MonoBehaviour
     public float rotationSpeed = 2.5f;
 
     private Animator anim;
+    private AudioManager am;
 
     void Awake()
     {
         anim = GetComponentInChildren<Animator>();
+        am = GetComponent<AudioManager>();
         ia = new InputActions();
         movement = ia.Player.Movement;
     }
@@ -38,8 +40,14 @@ public class JohnnyPlayerMove : MonoBehaviour
 
         if(mov == Vector2.zero) {
             anim.SetBool("isWalking", false);
+            Debug.Log("bruh");
+            if (am.sounds["Walk"].isPlaying)
+                am.sounds["Walk"].Pause();
         } else {
             anim.SetBool("isWalking", true);
+            Debug.Log("bruh1231234");
+            if (!am.sounds["Walk"].isPlaying)
+                am.sounds["Walk"].Play();
         }
 
         transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y + (mov.x * rotationSpeed), transform.localEulerAngles.z);
@@ -48,5 +56,16 @@ public class JohnnyPlayerMove : MonoBehaviour
         rb.AddForce(transform.forward * mov.y*5, ForceMode.VelocityChange);
         if (rb.velocity.magnitude > speedLimit)
             rb.velocity = rb.velocity.normalized * speedLimit;
+        
+        if (rb.velocity.magnitude < 1.0f)
+        {
+            if (am.sounds["Walk"].isPlaying)
+                am.sounds["Walk"].Pause();
+        }
+        else
+        {
+            if (!am.sounds["Walk"].isPlaying)
+                am.sounds["Walk"].Play();
+        }
     }
 }

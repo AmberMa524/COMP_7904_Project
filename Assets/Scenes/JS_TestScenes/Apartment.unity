@@ -648,6 +648,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5218756922100031704, guid: 5bd2595852f7135429ae68fd70ef754e,
+        type: 3}
+      propertyPath: Priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218756922100031704, guid: 5bd2595852f7135429ae68fd70ef754e,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218756922100031704, guid: 5bd2595852f7135429ae68fd70ef754e,
+        type: 3}
+      propertyPath: rolloffMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7039746497916690845, guid: 5bd2595852f7135429ae68fd70ef754e,
         type: 3}
       propertyPath: m_RootOrder
@@ -2934,6 +2949,14 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 315111526}
   m_PrefabAsset: {fileID: 0}
+--- !u!81 &1879411744
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879411737}
+  m_Enabled: 1
 --- !u!1001 &1997285953
 PrefabInstance:
   m_ObjectHideFlags: 0
