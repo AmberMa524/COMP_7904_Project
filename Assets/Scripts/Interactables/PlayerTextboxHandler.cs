@@ -15,7 +15,8 @@ public class PlayerTextboxHandler : MonoBehaviour
     InputAction interact;
 
     List<string> textLines;
-    int textIndex = 0;
+    int textIndex = -1;
+    bool first = true;
 
     private void Awake()
     {
@@ -56,17 +57,24 @@ public class PlayerTextboxHandler : MonoBehaviour
                 jpm.enabled = true;
                 ih.enabled = true;
                 cg.alpha = 0;
+                textLines = null;
+                tmp.text = "";
+                first = false;
             }
         }
     }
 
     public void ShowTextLines(List<string> tl)
     {
-        cg.alpha = 1;
         textLines = tl;
         jpm.enabled = false;
         ih.enabled = false;
-        tmp.text = textLines[0];
-        textIndex = 0;
+        textIndex = -1;
+        cg.alpha = 1;
+        
+        if(!first)
+        {
+            ProceedText(new InputAction.CallbackContext());
+        }
     }
 }
