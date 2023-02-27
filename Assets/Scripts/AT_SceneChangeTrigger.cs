@@ -7,11 +7,6 @@ public class AT_SceneChangeTrigger : MonoBehaviour
 {
     public string sceneName;
 
-    private void Awake()
-    {
-        GetComponent<MeshRenderer>().enabled = false;
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")

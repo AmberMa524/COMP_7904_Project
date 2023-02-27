@@ -32,6 +32,9 @@ public class JohnnyPlayerMove : MonoBehaviour
     private void OnDisable()
     {
         movement.Disable();
+        anim.SetBool("isWalking", false);
+        if (am.sounds["Walk"].isPlaying)
+            am.sounds["Walk"].Pause();
     }
 
     void FixedUpdate()

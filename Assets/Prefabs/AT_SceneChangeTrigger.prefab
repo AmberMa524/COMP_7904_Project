@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6983635392956074554}
   - component: {fileID: 714205587636487831}
   - component: {fileID: 2138050125868664599}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AT_SceneChangeTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}

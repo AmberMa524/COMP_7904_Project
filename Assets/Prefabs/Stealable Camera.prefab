@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 8144830482700559734}
   - component: {fileID: 3455255632067278627}
   - component: {fileID: 1818700538044085087}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Camera Trigger A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 119
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 3298622446206688279}
   - component: {fileID: 1982136260182477227}
   - component: {fileID: 1006347822642102404}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Camera Trigger B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
