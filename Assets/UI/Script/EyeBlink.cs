@@ -27,7 +27,7 @@ public class EyeBlink : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Debug.Log(blink_value);
+        //Debug.Log(blink_value);
         if (blink_value == 1)
         {
             if (blinked)
