@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
@@ -13,6 +14,7 @@ public class PlayerTextboxHandler : MonoBehaviour
     public static PlayerTextboxHandler Instance;
     InputActions ia;
     InputAction interact;
+    Action callback;
 
     List<string> textLines;
     int textIndex = -1;
@@ -60,8 +62,16 @@ public class PlayerTextboxHandler : MonoBehaviour
                 textLines = null;
                 tmp.text = "";
                 first = false;
+                if(callback != null)
+                    callback();
+                callback = null;
             }
         }
+    }
+
+    public void SetCallback(Action cb)
+    {
+        callback = cb;
     }
 
     public void ShowTextLines(List<string> tl)
