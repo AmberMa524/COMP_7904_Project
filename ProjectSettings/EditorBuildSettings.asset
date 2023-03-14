@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/AT_Tests/AT_Scene2Temp.unity
     guid: 95a98f5396911ed4584a4fc7f4ee47f9
   - enabled: 1
+    path: Assets/Scenes/JS_TestScenes/BUAS.unity
+    guid: 80f6c8be9ac36684eaff245751f43c94
+  - enabled: 1
     path: Assets/Scenes/AT_Tests/AT_Scene3Temp.unity
     guid: 9d35153f24c1e4e4b95d74d47f42647c
   - enabled: 1

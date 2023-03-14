@@ -154,6 +154,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: User_Interface
       objectReference: {fileID: 0}
+    - target: {fileID: 4571286792931058273, guid: 08afb771db7345d4fb1fafe5028eaa20,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4571286792931058301, guid: 08afb771db7345d4fb1fafe5028eaa20,
         type: 3}
       propertyPath: m_Pivot.x
@@ -492,7 +497,7 @@ PrefabInstance:
     - target: {fileID: 7039746497916690845, guid: 5bd2595852f7135429ae68fd70ef754e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.129322
+      value: -5.04
       objectReference: {fileID: 0}
     - target: {fileID: 7039746497916690845, guid: 5bd2595852f7135429ae68fd70ef754e,
         type: 3}
