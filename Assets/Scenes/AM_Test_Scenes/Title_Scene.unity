@@ -1551,7 +1551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5abf7eeed97c2d24f83fe55ace8b46dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: SampleScene
+  sceneName: Apartment
 --- !u!224 &1228835346 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4260485351782355506, guid: e23f6a8cc3fe83441aecb26f797ddbd7,
