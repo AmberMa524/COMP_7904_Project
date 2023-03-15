@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 // See "AudioManager.cs" for documentation.
 
@@ -41,6 +43,7 @@ public class UMap_Object<T>
     }
 }
 
+#if UNITY_EDITOR
 [CustomPropertyDrawer(typeof(UMap_Object<>))]
 public class UMap_ObjectDrawer : PropertyDrawer
 {
@@ -62,3 +65,4 @@ public class UMap_ObjectDrawer : PropertyDrawer
         EditorGUI.PropertyField(valueRect, valueProperty, GUIContent.none);
     }
 }
+#endif
