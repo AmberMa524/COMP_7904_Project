@@ -20,7 +20,6 @@ public class ANIM_Title : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(animator.GetCurrentAnimatorClipInfo(0)[0].clip.name);
         if (animator.GetCurrentAnimatorClipInfo(0)[0].clip.name == "Entry" && 
             !animator.IsInTransition(0) && 
             animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.99f) {
