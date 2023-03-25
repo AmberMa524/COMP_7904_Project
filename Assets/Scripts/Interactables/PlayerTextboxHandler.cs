@@ -12,6 +12,7 @@ public class PlayerTextboxHandler : MonoBehaviour
     public CanvasGroup cg;
     public TextMeshProUGUI tmp;
     public static PlayerTextboxHandler Instance;
+    public Canvas phoneUI;
     InputActions ia;
     InputAction interact;
     Action callback;
@@ -19,6 +20,7 @@ public class PlayerTextboxHandler : MonoBehaviour
     List<string> textLines;
     int textIndex = -1;
     bool first = true;
+    public bool canEnablePhone = true;
 
     private void Awake()
     {
@@ -47,6 +49,11 @@ public class PlayerTextboxHandler : MonoBehaviour
         interact.Disable();
     }
 
+    public bool IsActive()
+    {
+        return cg.alpha != 0;
+    }
+
     void ProceedText(InputAction.CallbackContext _)
     {
         if(cg.alpha > 0)
@@ -62,8 +69,9 @@ public class PlayerTextboxHandler : MonoBehaviour
                 textLines = null;
                 tmp.text = "";
                 first = false;
-                if(callback != null)
-                    callback();
+                if (canEnablePhone)
+                    phoneUI.enabled = true;
+                callback?.Invoke();
                 callback = null;
             }
         }
@@ -81,6 +89,10 @@ public class PlayerTextboxHandler : MonoBehaviour
         ih.enabled = false;
         textIndex = -1;
         cg.alpha = 1;
+
+        if (canEnablePhone)
+            phoneUI.enabled = false;
+            
         
         if(!first)
         {

@@ -59,11 +59,11 @@ public class MusicManager : MonoBehaviour
         if (i <= audiolist.Length && i >= 0)
         {
             currentaudio = audiolist[i];
-            Debug.Log("Valid Index");
+            //Debug.Log("Valid Index");
         }
         else
         {
-            Debug.Log("Invalid Index");
+            //Debug.Log("Invalid Index");
         }
     }
 
