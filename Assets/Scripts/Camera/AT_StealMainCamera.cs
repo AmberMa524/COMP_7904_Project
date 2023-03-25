@@ -10,7 +10,7 @@ public class AT_StealMainCamera : MonoBehaviour
     public AT_StealCameraTrigger triggerA;
     public AT_StealCameraTrigger triggerB;
 
-    private void Start()
+    private void Awake()
     {
         if(isStartingCamera)
         {
@@ -28,9 +28,14 @@ public class AT_StealMainCamera : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            currentCamera.enabled = false;
-            cam.enabled = true;
-            currentCamera = cam;
+            StealCamera();
         }
+    }
+
+    public void StealCamera()
+    {
+        currentCamera.enabled = false;
+        cam.enabled = true;
+        currentCamera = cam;
     }
 }
