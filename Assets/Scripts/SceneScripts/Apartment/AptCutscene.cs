@@ -78,6 +78,7 @@ public class AptCutscene : MonoBehaviour
             blackScreen.alpha -= 0.005f;
             if(blackScreen.alpha <= 0)
             {
+                Destroy(blackScreen.gameObject);
                 pth.ShowTextLines(dialogue[1]);
                 framelyFunc = framelies[1];
             }

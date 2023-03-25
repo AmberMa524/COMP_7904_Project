@@ -1185,8 +1185,8 @@ CanvasGroup:
   m_GameObject: {fileID: 2992938575858351214}
   m_Enabled: 1
   m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!1 &3277873853237138656
 GameObject:
@@ -2905,6 +2905,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571286792931058302, guid: 08afb771db7345d4fb1fafe5028eaa20,
+        type: 3}
+      propertyPath: m_OverrideSorting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08afb771db7345d4fb1fafe5028eaa20, type: 3}
