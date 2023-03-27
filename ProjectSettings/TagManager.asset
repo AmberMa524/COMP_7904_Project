@@ -8,6 +8,7 @@ TagManager:
   - Phone_Button
   - Settings_Screen
   - Exit_Check
+  - Inventory_Screen
   layers:
   - Default
   - TransparentFX

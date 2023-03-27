@@ -12,6 +12,8 @@ public class UI_Clickhandler : MonoBehaviour
 
     public GameObject exitcheck;
 
+    public GameObject inventory;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,7 @@ public class UI_Clickhandler : MonoBehaviour
         HideMenu();
         HideSettings();
         HideExitCheck();
+        HideInventory();
     }
 
     // Update is called once per frame
@@ -61,5 +64,17 @@ public class UI_Clickhandler : MonoBehaviour
     {
         Debug.Log("Show Exit");
         exitcheck.SetActive(true);
+    }
+
+    public void HideInventory()
+    {
+        Debug.Log("Hide Settings");
+        inventory.SetActive(false);
+    }
+
+    public void ShowInventory()
+    {
+        Debug.Log("Hide Settings");
+        inventory.SetActive(true);
     }
 }

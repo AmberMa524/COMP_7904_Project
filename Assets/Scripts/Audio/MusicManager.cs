@@ -71,13 +71,16 @@ public class MusicManager : MonoBehaviour
         if (currentaudio != null)
         {
             if (vol > 1.0f) {
-                currentaudio.volume = 1.0f;
+                float percentage = (float) (PlayerData.getVolume()/100);
+                currentaudio.volume = (percentage)*(1.0f);
                 volume_value = 1.0f;
             } else if (vol < 0.0f) {
-                currentaudio.volume = 0.0f;
+                float percentage = (float)(PlayerData.getVolume() / 100);
+                currentaudio.volume = (percentage) * 0.0f;
                 volume_value = 0.0f;
             } else {
-                currentaudio.volume = vol;
+                float percentage = (float)(PlayerData.getVolume() / 100);
+                currentaudio.volume = (percentage) * vol;
             }
         }
     }
