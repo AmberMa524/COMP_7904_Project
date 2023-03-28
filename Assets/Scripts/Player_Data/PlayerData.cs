@@ -83,8 +83,12 @@ public class PlayerData : MonoBehaviour
         text_color = c;
     }
 
+    public static Color getColor() {
+        return text_color;
+    }
+
     public static void reset() {
-        default_color = Color.black;
+        default_color = Color.white;
         text_color = default_color;
         volume_percent = 100;
     }

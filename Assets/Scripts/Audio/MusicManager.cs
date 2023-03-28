@@ -68,19 +68,18 @@ public class MusicManager : MonoBehaviour
     }
 
     public void changeVolume(float vol) {
+        
         if (currentaudio != null)
         {
-            if (vol > 1.0f) {
-                float percentage = (float) (PlayerData.getVolume()/100);
-                currentaudio.volume = (percentage)*(1.0f);
+
+            if (vol >= 100.0f) {
+                currentaudio.volume = 1.0f;
                 volume_value = 1.0f;
-            } else if (vol < 0.0f) {
-                float percentage = (float)(PlayerData.getVolume() / 100);
-                currentaudio.volume = (percentage) * 0.0f;
+            } else if (vol <= 0.0f) {
+                currentaudio.volume = 0.0f;
                 volume_value = 0.0f;
             } else {
-                float percentage = (float)(PlayerData.getVolume() / 100);
-                currentaudio.volume = (percentage) * vol;
+                currentaudio.volume = (PlayerData.getVolume() / 100.0f) * vol;
             }
         }
     }
