@@ -37,6 +37,10 @@ public class PlayerTextboxHandler : MonoBehaviour
         }
     }
 
+    private void Update() {
+        tmp.color = PlayerData.getColor();
+    }
+
     private void OnEnable()
     {
         interact.performed += ProceedText;
