@@ -53,14 +53,7 @@ public class PlayerData : MonoBehaviour
 
     public static void addEntry(JournalEntry e)
     {
-        int index = e.getIndex();
-        if (journal_list[index] == null)
-        {
-            journal_list[index] = e;
-        }
-        else {
-            Debug.Log("Can't Add Entry, Index is Already Filled");
-        }
+        journal_list.Add(e);
     }
 
     public static void changeVolume(int i) {
@@ -91,5 +84,6 @@ public class PlayerData : MonoBehaviour
         default_color = Color.white;
         text_color = default_color;
         volume_percent = 100;
+        journal_list = new List<JournalEntry>();
     }
 }
