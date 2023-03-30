@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class JournalEntry : MonoBehaviour
 {
-    private string description;
+    public string description;
 
-    private string name;
+    public string name;
 
-    private int index;
+    public int index;
 
     public JournalEntry(string desc, string title, int number) {
         description = desc;

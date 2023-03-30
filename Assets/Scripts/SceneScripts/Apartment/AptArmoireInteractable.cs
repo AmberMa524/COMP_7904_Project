@@ -7,6 +7,11 @@ public class AptArmoireInteractable : Interactable
     public List<string> jacketlessText;
     public List<string> jacketText;
 
+    void Start()
+    {
+        interacted = false;
+    }
+
     public override void BeInteractedWith()
     {
         if (AptDoorInteractable.Instance.jacketOn)
@@ -16,5 +21,6 @@ public class AptArmoireInteractable : Interactable
             PlayerTextboxHandler.Instance.ShowTextLines(jacketlessText);
             AptDoorInteractable.Instance.jacketOn = true;
         }
+        collectEntry();
     }
 }

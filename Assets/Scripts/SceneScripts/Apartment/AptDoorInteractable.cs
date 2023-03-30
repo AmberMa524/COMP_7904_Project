@@ -21,11 +21,18 @@ public class AptDoorInteractable : Interactable
         }
     }
 
+    void Start()
+    {
+        interacted = false;
+    }
+
     public override void BeInteractedWith()
     {
         if (!jacketOn)
             PlayerTextboxHandler.Instance.ShowTextLines(cantLeaveText);
         else
             SceneManager.LoadScene(destinationScene);
+
+        collectEntry();
     }
 }
