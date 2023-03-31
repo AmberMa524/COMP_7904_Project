@@ -26,12 +26,13 @@ public class JournalMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        setUpPage();
+        Debug.Log("index: " + index);
     }
 
     public void updateJournal() {
         current_journal = PlayerData.getJournalList();
         index = 0;
+        setUpPage();
     }
 
     public void setUpPage() {
@@ -48,33 +49,33 @@ public class JournalMenu : MonoBehaviour
     }
 
     public void changePage(bool forwards) {
-        if (current_journal.Count != 0 && current_journal.Count != 1) {
+        if (current_journal.Count != 0) {
 
-            int inc;
             if (forwards)
             {
-                inc = 1;
+                index += 1;
             }
             else
             {
-                inc = -1;
+                index += -1;
             }
 
-            if ((inc + index) > current_journal.Count)
+            if (index > current_journal.Count)
             {
                 index = 0;
             }
-            else if ((inc + index) < 0)
+            else if (index < 0)
             {
                 index = current_journal.Count - 1;
             }
             else
             {
-                index += inc;
+                Debug.Log("Index within range");
             }
 
         } else {
             Debug.Log("Cannot Change Page, as there are no entries.");
         }
+        setUpPage();
     }
 }

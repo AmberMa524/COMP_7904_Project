@@ -68,4 +68,8 @@ public class UI_Clickhandler : MonoBehaviour
     {
         inventory.SetActive(true);
     }
+
+    public void resetData() {
+        PlayerData.reset();
+    }
 }

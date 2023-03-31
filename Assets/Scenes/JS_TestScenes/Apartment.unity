@@ -851,8 +851,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1198d0708818d4d4eb16728b4ce1cff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: This is a Door
-  name: Door
+  description: My apartment door is extraordinarily weak and easy to break down,
+    so my home has experienced frequent break-ins. However, everytime there was a
+    break-in, the burglars often left without stealing anything, as they quickly
+    realized that there is nothing valuable enough to steal in my apartment.
+  name: Aparment Door
   index: 0
 --- !u!1 &295078200
 GameObject:
@@ -2379,8 +2382,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1198d0708818d4d4eb16728b4ce1cff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: 'This is the television in your room. You got it at a garage sale
-    a while back. '
+  description: This is my television set. I purchased it at a garage sale a few years
+    back. I've been able to access more of the major channels as of late since I
+    learned how to steal cable from my neighbor down the block. My favourite channel
+    is MTV, but it's more of a guilty pleasure than anything else.
   name: TV
   index: 0
 --- !u!1 &812201261 stripped
@@ -4221,8 +4226,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1198d0708818d4d4eb16728b4ce1cff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: 
-  name: 
+  description: This was my mother's armoire. I had inherited it in her will, but
+    I find I hardly use it. Most of my clothes end up on the floor anyways since
+    I'm often too busy to fold them up and put them away. I suppose I still keep
+    the old thing because it was my mother's only real belonging. It makes me feel
+    like she is still here with me.
+  name: Armoire
   index: 0
 --- !u!1 &1835719120
 GameObject:
@@ -4492,7 +4501,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1198d0708818d4d4eb16728b4ce1cff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: You've Interacted With A Desk
+  description: My old writing desk. This is where I've written some of my greatest
+    work. Some on typewriter, some by hand. I've cracked out several successful manifestos,
+    one of which was nominated for an award at the Detroit underground conspiracy
+    association. However, it lost to "Don't Drink the Conformist's Punch".
   name: Desk
   index: 0
 --- !u!1001 &1997285953
