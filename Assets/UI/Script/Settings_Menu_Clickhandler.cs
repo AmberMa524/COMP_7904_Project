@@ -32,4 +32,8 @@ public class Settings_Menu_Clickhandler : MonoBehaviour
     {
         subtitles.SetActive(true);
     }
+    public void resetGame() {
+        PlayerData.reset();
+        PlayerData.startGame();
+    }
 }

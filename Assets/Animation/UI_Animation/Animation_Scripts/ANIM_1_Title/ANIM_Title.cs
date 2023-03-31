@@ -32,7 +32,7 @@ public class ANIM_Title : MonoBehaviour
             !animator.IsInTransition(0)) {
 
             if (sceneName != "") {
-
+                PlayerData.startGame();
                 SceneManager.LoadScene(sceneName);
 
             }

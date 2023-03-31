@@ -9,11 +9,15 @@ public class PlayerData : MonoBehaviour
 
     public static Color default_color;
 
+    public static float time;
+
     public static int volume_percent;
 
     public static Color text_color;
 
     public static List<MapObject> map_list;
+
+    public static bool game_started;
     //List of maps
 
     public static List<JournalEntry> journal_list;
@@ -37,18 +41,13 @@ public class PlayerData : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (game_started) {
+            time += Time.deltaTime;
+        }
     }
 
     public static void addMap(MapObject m) {
-        int index = m.getIndex();
-        if (journal_list[index] == null)
-        {
-            map_list[index] = m;
-        }
-        else {
-            Debug.Log("Can't Add Map, Index is Already Filled");
-        }
+        map_list.Add(m);
     }
 
     public static void addEntry(JournalEntry e)
@@ -84,11 +83,26 @@ public class PlayerData : MonoBehaviour
         return journal_list;
     }
 
+    public static List<MapObject> getMapList()
+    {
+        return map_list;
+    }
+
+    public static void startGame() {
+        game_started = true;
+    }
+
+    public static float getTime() {
+        return time;
+    }
+
     public static void reset() {
         default_color = Color.white;
         text_color = default_color;
         volume_percent = 100;
         journal_list = new List<JournalEntry>();
         map_list = new List<MapObject>();
+        time = 0.0f;
+        game_started = false;
     }
 }
