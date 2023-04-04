@@ -7,6 +7,8 @@ public class AptArmoireInteractable : Interactable
     public List<string> jacketlessText;
     public List<string> jacketText;
 
+    public GameObject player;
+
     void Start()
     {
         interacted = false;
@@ -22,5 +24,6 @@ public class AptArmoireInteractable : Interactable
             AptDoorInteractable.Instance.jacketOn = true;
         }
         collectEntry();
+        player.GetComponent<PutOnCoat>().activateCoat();
     }
 }
