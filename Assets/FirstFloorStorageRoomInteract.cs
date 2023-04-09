@@ -1,4 +1,4 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,8 +22,6 @@ public class FirstFloorStorageRoomInteract : Interactable
             player.enabled = false;
             controlPanel.SetActive(true);
         }
-
-
         //PlayerTextboxHandler.Instance.ShowTextLines(doorText);
     }
 }

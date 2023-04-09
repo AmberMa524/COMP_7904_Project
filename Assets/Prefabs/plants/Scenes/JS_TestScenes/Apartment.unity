@@ -967,6 +967,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 858873237471752567, guid: 5bd2595852f7135429ae68fd70ef754e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 31d03439c336f0b4e89fb1dca1c34e13, type: 2}
     - target: {fileID: 2931941241791822603, guid: 5bd2595852f7135429ae68fd70ef754e,
         type: 3}
       propertyPath: m_IsActive
@@ -977,6 +982,11 @@ PrefabInstance:
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 9000000, guid: 84301280d60e3224983965dd62e28c9c, type: 3}
+    - target: {fileID: 4346325547912774596, guid: 5bd2595852f7135429ae68fd70ef754e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4346325547912774596, guid: 5bd2595852f7135429ae68fd70ef754e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1390,8 +1400,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444563242}
   m_LocalRotation: {x: 0.99678636, y: -0, z: 0.08010587, w: 0}
-  m_LocalPosition: {x: -9.510597, y: 11.42, z: 13.453854}
-  m_LocalScale: {x: 1, y: 12, z: 4.6558533}
+  m_LocalPosition: {x: -9.53, y: 11.42, z: 13.57}
+  m_LocalScale: {x: 1, y: 12, z: 5.59}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1171663978}
@@ -3799,6 +3809,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1388869814}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1388869816 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bcec8133df291f24ba9a9fb4aec4b151,
+    type: 3}
+  m_PrefabInstance: {fileID: 1388869814}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1388869817
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388869816}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.5748024, y: 2.0136793, z: 2.7229447}
+  m_Center: {x: 0.11998107, y: 0.50683963, z: -0.20023972}
 --- !u!4 &1389809446 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f046c74f391b50f4cbea87e0daac44c5,

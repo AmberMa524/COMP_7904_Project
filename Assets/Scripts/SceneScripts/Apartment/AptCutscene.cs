@@ -54,16 +54,16 @@ public class AptCutscene : MonoBehaviour
         d = new() {
             "TV: In breaking news today, a miraculous development in the case of CEO Harmon West who was pronounced dead after falling into a coma last month due to a stroke.",
             "TV: Harmon was admitted to experimental treatment under the pharmaceutical company BNA,",
-            "TV: and they have reported the treatment as successful and Harmon�s prior reported status as a false report.",
+            "TV: and they have reported the treatment as successful and Harmon's prior reported status as a false report.",
             "TV: BNA says he will be making a full recovery from the stroke.",
-            "TV: This is the third person in the past year that BNA�s procedure has worked on and they say they hope to continue administering it."
+            "TV: This is the third person in the past year that BNA's procedure has worked on and they say they hope to continue administering it."
         };
         dialogue.Add(d);
         d = new() {
-            "Jodi: An imbecilic, spoiled, infantile shell of a man like him couldn�t even remember his own name, let alone �revive� himself!",
-            "Jodi: That�s the final nail, I�m going there, I�m finding whatever they are keeping there.",
-            "Jodi: It�s time for the world to see what I see.",
-            "Jodi: I�ll need to get my coat and get going."
+            "Jodi: An imbecilic, spoiled, infantile shell of a man like him couldn't even remember his own name, let alone 'revive' himself!",
+            "Jodi: That's the final nail, I'm going there, I'm finding whatever they are keeping there.",
+            "Jodi: It's time for the world to see what I see.",
+            "Jodi: I'll need to get my coat and get going."
         };
         dialogue.Add(d);
 

@@ -6,6 +6,8 @@ public class FirstFloorIDCardInteract : Interactable
 {
 
     public List<string> IDCardText;
+
+    public List<string> GoneText;
     public FirstFloorElevatorInteract elevator;
 
     void Start()
@@ -14,9 +16,14 @@ public class FirstFloorIDCardInteract : Interactable
     }
 
     public override void BeInteractedWith()
-    {
-        PlayerTextboxHandler.Instance.ShowTextLines(IDCardText);
-        elevator.HasKeyCard = true;
-        Destroy(gameObject);
+    {   
+        if(!interacted) {
+            PlayerTextboxHandler.Instance.ShowTextLines(IDCardText);
+            elevator.HasKeyCard = true;
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
+            interacted = true;
+        } else {
+            PlayerTextboxHandler.Instance.ShowTextLines(GoneText);
+        }
     }
 }
