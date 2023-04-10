@@ -6,39 +6,39 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Prefabs/plants/Scenes/AM_Test_Scenes/Title_Scene.unity
+    path: Assets/Scenes/AM_Test_Scenes/Title_Scene.unity
     guid: c4f3c7429887f32468ff3cfb532d049e
   - enabled: 0
-    path: Assets/Prefabs/plants/Scenes/SampleScene.unity
+    path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Prefabs/plants/Scenes/AT_Tests/AT_Scene1Temp.unity
+    path: Assets/Scenes/AT_Tests/AT_Scene1Temp.unity
     guid: 7042497be7a8bd0459738eec39eea417
   - enabled: 1
-    path: Assets/Prefabs/plants/Scenes/AT_Tests/AT_Scene2Temp.unity
+    path: Assets/Scenes/AT_Tests/AT_Scene2Temp.unity
     guid: 95a98f5396911ed4584a4fc7f4ee47f9
   - enabled: 1
-    path: Assets/Prefabs/plants/Scenes/JS_TestScenes/BUAS.unity
+    path: Assets/Scenes/JS_TestScenes/BUAS.unity
     guid: 80f6c8be9ac36684eaff245751f43c94
   - enabled: 1
-    path: Assets/Prefabs/plants/Scenes/AT_Tests/AT_Scene3Temp.unity
+    path: Assets/Scenes/AT_Tests/AT_Scene3Temp.unity
     guid: 9d35153f24c1e4e4b95d74d47f42647c
   - enabled: 1
-    path: Assets/Prefabs/plants/Scenes/AT_Tests/AT_Scene4Temp.unity
+    path: Assets/Scenes/AT_Tests/AT_Scene4Temp.unity
     guid: a617c057e9207074aaf53182ce505338
   - enabled: 1
-    path: Assets/Prefabs/plants/Scenes/JS_TestScenes/Apartment.unity
+    path: Assets/Scenes/JS_TestScenes/Apartment.unity
     guid: 1ec804b7f3af926489eee5e6ed27fb94
   - enabled: 1
-    path: Assets/Prefabs/plants/Scenes/JS_TestScenes/Apartment_Hallway.unity
+    path: Assets/Scenes/JS_TestScenes/Apartment_Hallway.unity
     guid: 9dd64372f0d71b04aab4b2885f76fc37
   - enabled: 1
-    path: Assets/Prefabs/plants/Scenes/JK_Tests/HospitalFront.unity
+    path: Assets/Scenes/JK_Tests/HospitalFront.unity
     guid: c87da8549d461204bab663d2a979cc9c
   - enabled: 1
-    path: Assets/Prefabs/plants/Scenes/JK_Tests/HospitalLevel1.unity
+    path: Assets/Scenes/JK_Tests/HospitalLevel1.unity
     guid: c7d6b7526c9a8de40941f5f4429c9261
   - enabled: 1
-    path: Assets/Prefabs/plants/Scenes/JK_Tests/DemoHospitalLevel2.unity
+    path: Assets/Scenes/JK_Tests/DemoHospitalLevel2.unity
     guid: 3305b7c3213bebe4992b6ff19d273998
   m_configObjects: {}
